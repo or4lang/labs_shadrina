@@ -17,7 +17,7 @@
 <body>
       <!-- Дизайн: https://ru.pinterest.com/pin/1102115340085119315/ -->
       <header>
-            <nav>
+            <nav class="desktop-nav">
                   <div class="nav-top">
                         <div class="info">
                               <a href="tel:+78005553535" class="bi bi-telephone"> +7 800 555 35 35</a>
@@ -41,6 +41,25 @@
                         </ul>
                   </div>
             </nav>
+            <nav class="mobile-nav">
+                  <button id="burger" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </button>
+                  <div class="mobile-menu">
+                        <ul>
+                              <li><a href="#menu">Меню</a></li>
+                              <li><a href="#about">О нас</a></li>
+                              <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                        <a href="tel:+78005553535" class="bi bi-telephone"> +7 800 555 35 35</a>
+                        <a href="mailto:hello@matchastudio.ru" class="bi bi-envelope"> hello@matchastudio.ru</a>
+                        <span class="bi bi-clock"> Пн-Вс: 10:00-20:00</span>
+                        <a href="#" class="bi bi-facebook"> matcha.st</a>
+                        <a href="#" class="bi bi-telegram"> matcha_studio</a>
+                  </div>
+            </nav>
       </header>
 
       <main>
@@ -49,7 +68,7 @@
                         <h1 class="hero-title">Matcha</h1>
                         <p class="hero-subtitle">Премиальное качество, тщательно отобранные ингредиенты.<br>В каждом
                               сезоне — свежие вкусы, гармония и немного вдохновения.</p>
-                        <button class="hero-cta"><a href="#menu">Попробовать <span
+                        <button class="hero-cta" type="button"><a href="#menu">Попробовать <span
                                           class="bi bi-arrow-right"></span></a></button>
                   </section>
             </div>
@@ -66,7 +85,7 @@
                         <p>Шелковистый и свежий вкус идеально подходит для бодрого начала дня или приятной паузы во
                               второй половине дня. Сделайте свой ежедневный ритуал особенным с чашкой настоящего матча.
                         </p>
-                        <button class="about-cta"><a href="#">Узнать о нас <span
+                        <button class="about-cta" type="button"><a href="#">Узнать о нас <span
                                           class="bi bi-arrow-right"></span></a></button>
                   </section>
                   <div class="about-img">

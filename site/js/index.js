@@ -1,8 +1,7 @@
-// let backToTopLogoNode = document.getElementById(`logo`);
+let burgerNode = document.getElementById(`burger`);
+let mobileMenuNode = document.querySelector(`.mobile-menu`)
 
-// backToTopLogoNode.addEventListener(`click`, function () {
-//       window.scrollTo({
-//             top: 0,
-//             behavior: 'smooth'
-//       });
-// });
+burgerNode.addEventListener(`click`, function () {
+      burgerNode.classList.toggle('active');
+      mobileMenuNode.classList.toggle('active');
+});
