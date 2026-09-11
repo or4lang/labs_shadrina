@@ -53,6 +53,7 @@ nav div {
 .logo-bottom {
       position: absolute;
       top: 30px;
+      left: 0;
       font-weight: 300;
       color: #9bc060;
 }
@@ -101,7 +102,6 @@ nav div {
       border: none;
       border-radius: 50px;
       background-color: #d17722ea;
-      color: #ffffff;
       font-size: 18px;
       font-weight: 500;
       padding: 15px 30px;
@@ -124,7 +124,7 @@ nav div {
 .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 300px;
+      gap: 100px;
       justify-content: space-between;
       padding: 30px 100px 100px 100px;
 }
@@ -257,7 +257,8 @@ footer a {
       color: #ffffff;
 }
 
-footer h3, p {
+footer h3,
+p {
       margin: 0;
 }
 
@@ -268,20 +269,134 @@ footer h3, p {
 }
 
 .logo {
-      display: flex;
       position: relative;
+      height: 47px;
 }
 
-.footer-navigation ul{
+.footer-navigation ul {
       list-style: none;
       padding: 0;
       margin: 0;
 }
 
-.footer-navigation ul li{
+.footer-navigation ul li {
       margin-bottom: 15px;
 }
 
 .footer-navigation a:hover {
       text-decoration: underline 1px;
+}
+
+@media (min-width: 375px) and (max-width: 960px) {}
+
+
+@media (max-width: 480px) {
+      .hero-container {
+            padding: 50px 25px 50px 25px;
+      }
+
+      .hero-title {
+            font-size: 100px;
+      }
+
+      .hero-subtitle {
+            font-size: 15px;
+      }
+
+      .hero-cta {
+            padding: 10px 15px;
+            font-size: 13px;
+      }
+
+      .about {
+            display: block;
+            padding: 15px 25px 50px 25px;
+      }
+
+      .about-content span {
+            font-size: 12px;
+      }
+
+      .about-content h2 {
+            font-size: 30px;
+            margin: 15px 0 15px 0;
+      }
+
+      .about-content p {
+            font-size: 15px;
+      }
+
+      .about-cta {
+            padding: 10px 15px;
+            font-size: 13px;
+            margin-top: 15px;
+      }
+
+      .about-img {
+            display: none;
+      }
+
+      .menu h2 {
+            font-size: 26px;
+            margin-top: 0;
+      }
+
+      .cards-grid {
+            grid-template-columns: 1fr;
+            padding: 0 50px 50px 50px;
+      }
+
+      .card h3 {
+            font-size: 19px;
+      }
+
+      .card p {
+            font-size: 15px;
+      }
+
+      .card a {
+            font-size: 13px;
+            margin-top: 15px;
+      }
+
+      .location {
+            padding: 15px 25px 50px 25px;
+      }
+
+      .location h2 {
+            font-size: 26px;
+      }
+
+      .location p {
+            font-size: 15px;
+      }
+
+      footer {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 15px 25px 50px 25px;
+      }
+
+      footer h3 {
+            font-size: 19px;
+      }
+
+      footer p, a {
+            font-size: 15px;
+      }
+
+      .footer-navigation ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 0;
+      }
+
+      .footer-navigation ul li{
+            margin-bottom: 0;
+      }
+
+      .footer-text {
+            display: none;
+      }
 }

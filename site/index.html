@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
       <link rel="stylesheet" href="css/index.css">
+      <script src="js/index.js" defer></script>
       <title>Matcha</title>
       <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -34,10 +35,9 @@
                               <span class="logo-bottom">studio</span>
                         </div>
                         <ul>
-                              <li><a href="price">Цены</a></li>
-                              <li><a href="menu">Меню</a></li>
-                              <li><a href="about">О нас</a></li>
-                              <li><a href="contacts">Контакты</a></li>
+                              <li><a href="#menu">Меню</a></li>
+                              <li><a href="#about">О нас</a></li>
+                              <li><a href="#contacts">Контакты</a></li>
                         </ul>
                   </div>
             </nav>
@@ -49,11 +49,12 @@
                         <h1 class="hero-title">Matcha</h1>
                         <p class="hero-subtitle">Премиальное качество, тщательно отобранные ингредиенты.<br>В каждом
                               сезоне — свежие вкусы, гармония и немного вдохновения.</p>
-                        <button class="hero-cta"><a href="#">Попробовать <span
+                        <button class="hero-cta"><a href="#menu">Попробовать <span
                                           class="bi bi-arrow-right"></span></a></button>
                   </section>
             </div>
 
+            <a name="about"></a>
             <div class="about">
                   <section class="about-content">
                         <span>Больше, чем просто напиток. Впечатление.</span>
@@ -68,11 +69,12 @@
                         <button class="about-cta"><a href="#">Узнать о нас <span
                                           class="bi bi-arrow-right"></span></a></button>
                   </section>
-                  <div>
+                  <div class="about-img">
                         <img src="assets/cup.png" alt="Чашка">
                   </div>
             </div>
 
+            <a name="menu"></a>
             <section class="menu">
                   <h2>Выбери свой любимый вкус</h2>
                   <div class="cards-grid">
@@ -121,12 +123,15 @@
             </section>
       </main>
 
+      <a name="contacts"></a>
       <footer>
             <div class="footer-logo">
-                  <p>Осознанный отдых, вдохновение и настоящий матча каждый день.</p>
+                  <p class="footer-text">Осознанный отдых, вдохновение и настоящий матча каждый день.</p>
                   <div class="logo">
-                        <span class="logo-top">matcha</span>
-                        <span class="logo-bottom">studio</span>
+                        <a href="#">
+                              <span class="logo-top">matcha</span>
+                              <span class="logo-bottom">studio</span>
+                        </a>
                   </div>
             </div>
             <div class="footer-contacts">
@@ -140,16 +145,15 @@
             <div class="footer-navigation">
                   <h3>Навигация</h3>
                   <ul>
-                        <li><a href="price">Цены</a></li>
-                        <li><a href="menu">Меню</a></li>
-                        <li><a href="about">О нас</a></li>
-                        <li><a href="contacts">Контакты</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                   </ul>
             </div>
             <div class="footer-media">
                   <h3>Подписывайтесь на нас</h3>
-                  <a class="bi bi-facebook"> matcha.st</a>
-                  <a class="bi bi-telegram"> matcha_studio</a>
+                  <a href="#" class="bi bi-facebook"> matcha.st</a>
+                  <a href="#" class="bi bi-telegram"> matcha_studio</a>
             </div>
       </footer>
 </body>
