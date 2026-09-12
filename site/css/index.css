@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
       box-sizing: border-box;
 }
@@ -11,6 +14,14 @@ body {
       background-color: #e3e3c9;
       margin: 0;
       padding: 0;
+}
+
+h2 {
+      font-size: 45px;
+}
+
+p {
+      font-size: 18px;
 }
 
 .desktop-nav {
@@ -91,7 +102,7 @@ body {
       gap: 20px;
       background-color: #0b1908;
       width: 100%;
-      padding: 0 0 15px 25px;
+      padding: 0 0 15px 35px;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -121,7 +132,7 @@ body {
       width: 40px;
       height: 40px;
       padding: 8px;
-      margin-left: 17px;
+      margin-left: 27px;
       border: none;
       background: transparent;
       cursor: pointer;
@@ -175,7 +186,6 @@ body {
 }
 
 .hero-subtitle {
-      font-size: 20px;
       margin: 0 0 25px;
 }
 
@@ -233,10 +243,6 @@ body {
       margin: 30px 0 30px 0;
 }
 
-.about-content p {
-      font-size: 18px;
-}
-
 .about-cta {
       border: none;
       border-radius: 5px;
@@ -259,7 +265,6 @@ body {
 }
 
 .menu h2 {
-      font-size: 45px;
       text-align: center;
 }
 
@@ -287,16 +292,17 @@ body {
       font-size: 20px;
 }
 
-.card p {
-      font-size: 18px;
-}
-
 .card a {
       font-size: 18px;
       font-weight: 600;
       margin-top: auto;
       text-decoration: none;
       color: #000000;
+}
+
+.card p,
+.card a {
+      margin-top: auto;
 }
 
 .location {
@@ -309,12 +315,7 @@ body {
       padding: 130px 0 130px 100px;
 }
 
-.location h2 {
-      font-size: 45px;
-}
-
 .location p {
-      font-size: 18px;
       font-weight: 600;
 }
 
@@ -340,7 +341,7 @@ footer a {
 }
 
 footer h3,
-p {
+footer p {
       margin: 0;
 }
 
@@ -369,10 +370,155 @@ p {
       text-decoration: underline 1px;
 }
 
-@media (min-width: 375px) and (max-width: 960px) {}
+@media (max-width: 1500px) {
+      .about-content h2 {
+            font-size: 45px;
+      }
+}
 
+@media (max-width: 1280px) {
+      h2 {
+            font-size: 34px;
+      }
 
-@media (max-width: 480px) {
+      p,
+      .nav-main ul {
+            font-size: 17px;
+      }
+
+      .desktop-nav {
+            padding: 20px 70px;
+      }
+
+      .nav-main {
+            padding: 0px 35px;
+      }
+
+      .hero-container {
+            padding: 150px 0px 100px 70px;
+      }
+
+      .hero-title {
+            font-size: 140px;
+      }
+
+      .about {
+            padding: 30px 70px 50px 70px;
+      }
+
+      .about-content p {
+            margin-top: 0;
+      }
+
+      .about-content span,
+      .card a {
+            font-size: 16px;
+      }
+
+      .about-content h2 {
+            font-size: 38px;
+            margin: 20px 0 20px 0;
+      }
+
+      .about-cta {
+            margin-top: auto;
+      }
+
+      .cards-grid {
+            padding: 0 70px 70px 70px;
+            gap: 25px;
+      }
+
+      .card h3 {
+            min-height: 51px;
+      }
+
+      .card p {
+            margin-top: 0;
+      }
+
+      .location,
+      footer {
+            padding: 50px 70px 50px 70px;
+      }
+
+      .location h2 {
+            margin-top: 0;
+      }
+
+      .location p {
+            margin-bottom: 0;
+      }
+
+      footer {
+            gap: 55px;
+      }
+
+      footer a,
+      footer p {
+            font-size: 16px;
+      }
+}
+
+@media (max-width: 1024px) {
+      h2 {
+            font-size: 32px;
+      }
+
+      p,
+      .nav-main ul {
+            font-size: 16px;
+      }
+
+      .desktop-nav {
+            padding: 20px 55px;
+      }
+
+      .nav-main {
+            padding: 0px 27px;
+      }
+
+      .hero-container {
+            padding: 100px 0px 80px 55px;
+      }
+
+      .hero-title {
+            font-size: 135px;
+      }
+
+      .hero-cta,
+      .about-cta {
+            padding: 15px 25px;
+            font-size: 16px;
+      }
+
+      .about {
+            gap: 50px;
+            padding: 20px 55px 50px 55px;
+      }
+
+      .about-content h2 {
+            font-size: 34px;
+            margin: 20px 0 20px 0;
+      }
+
+      .about-cta {
+            margin-top: 15px;
+      }
+
+      .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 55px 70px 55px;
+            gap: 25px;
+      }
+
+      .location,
+      footer {
+            padding: 35px 55px 35px 55px;
+      }
+}
+
+@media (max-width: 768px) {
       header {
             position: sticky;
             top: 0;
@@ -386,45 +532,39 @@ p {
             display: flex;
       }
 
+      .footer-text {
+            display: none;
+      }
+
+      h2 {
+            font-size: 30px;
+      }
+
       .hero-container {
-            padding: 50px 25px 50px 25px;
+            padding: 50px 35px 50px 35px;
       }
 
       .hero-title {
-            font-size: 100px;
+            font-size: 120px;
       }
 
-      .hero-subtitle {
-            font-size: 15px;
-      }
-
-      .hero-cta {
-            padding: 10px 15px;
-            font-size: 13px;
+      .hero-cta,
+      .about-cta {
+            padding: 10px 20px;
+            font-size: 14px;
       }
 
       .about {
             display: block;
-            padding: 15px 25px 50px 25px;
+            padding: 20px 35px 50px 35px;
       }
 
       .about-content span {
-            font-size: 12px;
+            font-size: 13px;
       }
 
       .about-content h2 {
-            font-size: 30px;
             margin: 15px 0 15px 0;
-      }
-
-      .about-content p {
-            font-size: 15px;
-      }
-
-      .about-cta {
-            padding: 10px 15px;
-            font-size: 13px;
-            margin-top: 15px;
       }
 
       .about-img {
@@ -432,52 +572,38 @@ p {
       }
 
       .menu h2 {
-            font-size: 26px;
             margin-top: 0;
       }
 
       .cards-grid {
             grid-template-columns: 1fr;
-            padding: 0 50px 50px 50px;
+            padding: 0 70px 50px 70px;
       }
 
       .card h3 {
             font-size: 19px;
       }
 
-      .card p {
-            font-size: 15px;
-      }
-
       .card a {
             font-size: 13px;
-            margin-top: 15px;
       }
 
       .location {
-            padding: 15px 25px 50px 25px;
-      }
-
-      .location h2 {
-            font-size: 26px;
-      }
-
-      .location p {
-            font-size: 15px;
+            padding: 35px;
       }
 
       footer {
-            grid-template-columns: 1fr;
-            gap: 20px;
-            padding: 15px 25px 50px 25px;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            padding: 25px 35px 25px 35px;
       }
 
       footer h3 {
             font-size: 19px;
       }
 
-      footer p,
-      a {
+      footer a,
+      footer p {
             font-size: 15px;
       }
 
@@ -491,8 +617,67 @@ p {
       .footer-navigation ul li {
             margin-bottom: 0;
       }
+}
 
-      .footer-text {
-            display: none;
+
+@media (max-width: 480px) {
+      h2 {
+            font-size: 26px;
+      }
+
+      p {
+            font-size: 15px;
+      }
+
+      #burger {
+            margin-left: 17px;
+      }
+
+      .mobile-menu {
+            padding: 0 0 15px 25px;
+      }
+
+      .hero-container {
+            padding: 50px 25px 50px 25px;
+      }
+
+      .hero-title {
+            font-size: 100px;
+      }
+
+      .hero-cta,
+      .about-cta {
+            padding: 10px 15px;
+            font-size: 13px;
+      }
+
+      .about {
+            padding: 15px 25px 50px 25px;
+      }
+
+      .about-content span {
+            font-size: 12px;
+      }
+
+      .about-content h2 {
+            font-size: 30px;
+      }
+
+      .cards-grid {
+            padding: 0 50px 50px 50px;
+      }
+
+      .card a {
+            margin-top: 15px;
+      }
+
+      .location {
+            padding: 25px;
+      }
+
+      footer {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 15px 25px 15px 25px;
       }
 }
